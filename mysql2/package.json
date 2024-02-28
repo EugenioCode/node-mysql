@@ -1,0 +1,22 @@
+{
+  "name": "node-mysql",
+  "version": "1.0.0",
+  "description": "node操作mysql数据库",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EugenioCode/node-mysql.git"
+  },
+  "author": "eugenio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EugenioCode/node-mysql/issues"
+  },
+  "homepage": "https://github.com/EugenioCode/node-mysql#readme",
+  "dependencies": {
+    "mysql2": "^3.9.1"
+  }
+}
