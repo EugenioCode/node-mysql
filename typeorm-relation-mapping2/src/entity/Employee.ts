@@ -10,6 +10,8 @@ export class Employee {
     })
     name: string;
 
-    @ManyToOne(() => Department)
+    @ManyToOne(() => Department, {
+      // cascade: true
+    })
     department: Department
 }

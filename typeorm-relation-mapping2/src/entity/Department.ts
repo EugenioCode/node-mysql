@@ -1,4 +1,5 @@
-import { Entity, PrimaryGeneratedColumn, Column } from "typeorm"
+import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from "typeorm"
+import { Employee } from "./Employee";
 
 @Entity()
 export class Department {
@@ -9,4 +10,9 @@ export class Department {
         length: 50
     })
     name: string;
+
+    @OneToMany(() => Employee, (employee) => employee.department, {
+      cascade: true
+    })
+    employees: Employee[]
 }
